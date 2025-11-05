@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    display: flex; /* ← flexbox NO flexbox */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.rojo {
+    background: tomato;
+    border-radius: 5px;
+    width: 200px;  /* Tamaño decente */
+    height: 200px; /* Tamaño decente */
+    display: flex; /* ← Esto falta */
+}
+
+.rojo > a {
+    display: flex;
+    color: #444;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div class= "rojo">
+    <a href="https://www.youtube.com/watch?v=V-DMoogk-3Y">1</a>     <!-- Como a es "inline" por defecto, hay que cambiarlo a bloque -->
+    </div>
+    
+</body>
+</html>
